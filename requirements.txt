@@ -1,0 +1,4 @@
+FastAPI
+Python- dotenv
+requests
+google-generativeai
