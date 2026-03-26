@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from backend.AI_services import generate_question
 
 app = FastAPI()
 
@@ -8,4 +9,6 @@ def home():
 
 @app.get("/question")
 def get_question():
-    return {"question": "What is the difference between list and tuple in Python?"}
+    question = generate_question()
+    return {"question": question}
+    
